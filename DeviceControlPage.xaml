@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="AdaptiveLayoutApp.DeviceControlPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="#E1FFD5">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+            <TextBlock Text="Device Control Panel"
+                       FontSize="24"
+                       Foreground="#2F4F4F"
+                       FontWeight="Bold"/>
+
+            <ToggleButton Content="Power"
+                          HorizontalAlignment="Center"
+                          MinWidth="120"
+                          Background="#4CAF50"
+                          Foreground="White"
+                          Padding="15,5"/>
+
+            <Slider Header="Brightness"
+                    Minimum="0"
+                    Maximum="100"
+                    Value="75"
+                    Width="250"
+                    Foreground="#2F4F4F"/>
+
+            <Slider Header="Volume"
+                    Minimum="0"
+                    Maximum="100"
+                    Value="50"
+                    Width="250"
+                    Foreground="#2F4F4F"/>
+        </StackPanel>
+    </Grid>
+</Page>
